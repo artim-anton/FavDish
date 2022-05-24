@@ -1,4 +1,4 @@
-package com.artimanton.favdish
+package com.artimanton.favdish.view.activities
 
 import android.content.Intent
 import android.os.Build
@@ -11,6 +11,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import com.artimanton.favdish.R
 import com.artimanton.favdish.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -31,7 +32,7 @@ class SplashActivity : AppCompatActivity() {
             )
         }
 
-        val splashAnimation = AnimationUtils.loadAnimation(this,R.anim.anim_splash)
+        val splashAnimation = AnimationUtils.loadAnimation(this, R.anim.anim_splash)
         splashBinding.tvAppName.animation = splashAnimation
 
         splashAnimation.setAnimationListener(object : Animation.AnimationListener {
